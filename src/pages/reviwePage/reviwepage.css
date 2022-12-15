@@ -1,0 +1,22 @@
+.reviwepage-headlineholder{
+    justify-content: center;
+    text-align: center;
+    padding-top:10%;
+}
+.reviwepage-title{
+    color:  #4F5665;
+    padding-top:2%;
+}
+.customer-reviews ul{
+    display: flex;
+    gap: 3%;
+    list-style: none;
+}
+.customers-comments{
+ padding-left:5%;
+}
+.customer-reviews{
+    border: 2px solid #DDDDDD;
+border-radius: 10px;
+padding:15px;
+}
