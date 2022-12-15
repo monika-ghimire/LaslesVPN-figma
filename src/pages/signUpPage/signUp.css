@@ -1,0 +1,66 @@
+
+.nav-bar-wapper ul{
+    list-style: none;
+    display: flex;
+    gap: 15%;
+    padding:3%;
+    color: #4F5665;
+}
+.sign-in-up-btn  li  button{
+    padding:4px 2%;
+    position: absolute;  
+}
+.signUp-btn{
+    border-radius:17px;
+    margin-left:15%;
+    border: 1px solid #F53855;
+    background-color: white;
+  
+}
+.sign-in-btn{
+    border: none;
+    margin-left:5%;
+    background-color: white;
+    color: #0B132A;
+    font-weight: 500;
+}
+
+
+/* laslesVPN-heading */
+.laslesVPN-heading{
+    font-weight: 500;
+
+}
+.laslesVPN-paragaraf{
+    color: #4F5665;
+}
+.get-started-btn{
+    background: #F53838;
+    color: white;
+    border: 0px;
+    padding:1.6% 5.9%;
+    border-radius:5px;
+    margin-top:9%;
+    
+}
+.content-heading-wappre{
+    padding:5%;
+}
+.sing-up-img{
+padding-right:3%;
+}
+.user-location-details-wapper{
+width:70%;
+background-color:white;
+margin-top: 10%;
+margin-left:15%;
+padding:3%;
+
+}
+.user-location-details-wapper ul{
+    display: flex;
+    list-style: none;
+    gap:8%;
+    border-right: 2px solid #EEEFF2;
+  
+}
