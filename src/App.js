@@ -5,16 +5,19 @@ import GobalPage from './pages/gobalPage/GobalPage';
 import PackagePlanPage from './pages/packagePlanPage/PackagePlanPage';
 import SignupPage from './pages/signUpPage/SignupPage';
 import ReviwePage from './pages/reviwePage/ReviwePage'
+import Footer from './pages/FooterPage/Footer';
 
 function App() {
   return (
     <div className='container-holder'>
       <div >
-      {/* <SignupPage/>
+      <SignupPage/>
       <FeaturesPages/>
       <PackagePlanPage/>
-      <GobalPage/> */}
+      <GobalPage/> 
       <ReviwePage/>
+      <Footer/>
+      
       </div>
     </div>
   );

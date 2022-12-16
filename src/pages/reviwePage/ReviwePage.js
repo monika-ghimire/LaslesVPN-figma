@@ -65,7 +65,7 @@ export default function ReviwePage() {
               </div>
             ))}
           </div>
-          <div className="row">
+          <div className="row slide-btn-group">
             <div className="col-md-6">
               <div className="slide-btn">
                 <ul>

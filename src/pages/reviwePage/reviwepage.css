@@ -4,7 +4,8 @@
     padding-top:10%;
 }
 .reviwepage-content-wapper{
-    background: #F6F6F6;
+   
+    position: relative;
 }
 .reviwepage-title{
     color:  #4F5665;
@@ -52,7 +53,8 @@ padding:15px;
 }
 .btn-group-holder{
     margin-left: 50%;
-    margin-top:18px;
+    margin-top:25px;
+    padding-bottom:20%;
 }
 .next-btn{
     background: #F53838 !important
@@ -62,12 +64,16 @@ padding:15px;
     display: flex;
     list-style: none;
     gap: 40%;
-    margin-top:10%;
+position: absolute;
+margin-bottom:10px;
     width:80%;
     margin-left:10%;
     background-color: white;
     padding-top: 5%;
+    box-shadow: 0 8px 6px -3px rgb(220, 220, 220);
 }
+
+
 .Subscribe-btn{
     background: #F53838;
 border-radius: 10px;
@@ -77,4 +83,7 @@ padding:15px 50px;
 margin-top:10px ;
 box-shadow: 0 8px 6px -2px #fb7d7d;
 
+}
+.slide-btn-group{
+    margin-top:2%;
 }

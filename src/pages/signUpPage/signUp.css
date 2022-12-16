@@ -55,6 +55,7 @@ background-color:white;
 margin-top: 10%;
 margin-left:15%;
 padding:3%;
+box-shadow: 0 10px 50px 10px rgb(234, 233, 233);
 
 }
 .user-location-details-wapper ul{
@@ -62,5 +63,5 @@ padding:3%;
     list-style: none;
     gap:8%;
     border-right: 2px solid #EEEFF2;
-  
+
 }
