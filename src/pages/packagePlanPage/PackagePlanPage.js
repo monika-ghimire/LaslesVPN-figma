@@ -1,17 +1,15 @@
-import React from "react";
+
 import "./package.css";
 import Free from "../../assest/Free.jpg";
 import rightBtn from "../../assest/rightBtn.jpg";
+import { useSelector, useDispatch } from "react-redux";
+import {selectfreePlan, selectStandardPlanList,selectPremiumPlanLIst} from '../../store/Reducer'
 
 export default function PackagePlanPage() {
-  let PremiumPlanLIst = [
-    "Unlimited Bandwitch",
-    "Encrypted Connection",
-    "Yes Traffic Logs",
-    "Works on All Devices",
-    "Connect Anyware",
-    "Get New Features",
-  ];
+  
+  // let PremiumPlanLIst = [
+   
+  // ];
   let StandardPlanList = [
     "Unlimited Bandwitch",
     "Encrypted Connection",
@@ -19,15 +17,30 @@ export default function PackagePlanPage() {
     "Works on All Devices",
     "Connect Anyware",
   ];
-  let freePlanLIst = [
-    "Unlimited Bandwitch",
-    "Encrypted Connection",
-    "No Traffic Logs",
-    "Works on All Devices",
-  ];
+ 
+  
+  
+  var myctivePlan = document.getElementById("myctivePlan");
+  var btns = myctivePlan.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+
+  
+  const freePlan= useSelector(selectfreePlan);
+  // const  StandardPlanList=useSelector(selectStandardPlanList);
+  const PremiumPlanLIst=useSelector(selectPremiumPlanLIst);
+
+  // const dispatch = useDispatch();
+    
+  
   return (
     <>
-      <div className="package-plan-content-wapper">
+      <div className="package-plan-content-wapper" id='myctivePlan'>
         <div className="package-plan-content-heading">
           <h3>Choose Your Plan</h3>
           <p>
@@ -38,11 +51,11 @@ export default function PackagePlanPage() {
 
         <div className="row box-packge-wapper">
           <div className="col-md-4">
-            <div className="package-plan-box">
+            <div className="package-plan-box active">
               <img src={Free} className="imgs-box" />
               <h4 className="heding-free-package">Free Plan</h4>
               <ul>
-                {freePlanLIst.map((x) => (
+                {freePlan.map((x) => (
                   <li className="binifits-choosing-plan">
                     <span>
                       <img src={rightBtn} />
@@ -54,7 +67,7 @@ export default function PackagePlanPage() {
               <div>
                 <div className="btn-holder-packegs">
                   <h4>Free</h4>
-                  <button className="packe-plan-btn">select</button>
+                  <button className=" btn packe-plan-btn " >select</button>
                 </div>
               </div>
             </div>
@@ -76,13 +89,13 @@ export default function PackagePlanPage() {
               <div>
                 <div className="btn-holder-packegs">
                 <h4><strong>$9</strong>/mo</h4>
-                  <button className="packe-plan-btn">select</button>
+                  <button className=" btn packe-plan-btn">select</button>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="package-plan-box active">
+            <div className="package-plan-box  ">
               <img src={Free} className="imgs-box" />
               <h4 className="heding-free-package">Premium Plan</h4>
               <ul>
@@ -90,7 +103,7 @@ export default function PackagePlanPage() {
                   <li className="binifits-choosing-plan">
                     <span>
                       <img src={rightBtn} />
-                    </span>{" "}
+                    </span>
                     {x}
                   </li>
                 ))}
@@ -98,7 +111,7 @@ export default function PackagePlanPage() {
               <div>
                 <div className="btn-holder-packegs">
                   <h4><strong>$12</strong>/mo</h4>
-                  <button className="packe-plan-btn">select</button>
+                  <button className=" btn packe-plan-btn">select</button>
                 </div>
               </div>
             </div>
