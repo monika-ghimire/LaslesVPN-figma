@@ -10,10 +10,10 @@ function App() {
   return (
     <div className='container-holder'>
       <div >
-      <SignupPage/>
+      {/* <SignupPage/>
       <FeaturesPages/>
       <PackagePlanPage/>
-      <GobalPage/>
+      <GobalPage/> */}
       <ReviwePage/>
       </div>
     </div>

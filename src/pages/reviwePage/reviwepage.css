@@ -3,6 +3,9 @@
     text-align: center;
     padding-top:10%;
 }
+.reviwepage-content-wapper{
+    background: #F6F6F6;
+}
 .reviwepage-title{
     color:  #4F5665;
     padding-top:2%;
@@ -16,7 +19,62 @@
  padding-left:5%;
 }
 .customer-reviews{
-    border: 2px solid #DDDDDD;
+    border: 2px solid rgb(221, 219, 219);
 border-radius: 10px;
 padding:15px;
+}
+
+.slide-btn ul {
+    display: flex;
+    gap:10px;
+    margin-top:9%;
+   
+}
+.slide-btn ul li{
+    display: flex;
+    width:10px;
+    height:10px;
+    background: #DDE0E4;
+    border-radius: 100%;
+}
+.slide-btn ul li:hover{
+  
+    background: #F53838;;
+}
+.btn-group-holder button
+{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: 2px solid #F53838;
+   background: white;
+   margin-left:4%;
+}
+.btn-group-holder{
+    margin-left: 50%;
+    margin-top:18px;
+}
+.next-btn{
+    background: #F53838 !important
+}
+
+.Subscribe-content ul{
+    display: flex;
+    list-style: none;
+    gap: 40%;
+    margin-top:10%;
+    width:80%;
+    margin-left:10%;
+    background-color: white;
+    padding-top: 5%;
+}
+.Subscribe-btn{
+    background: #F53838;
+border-radius: 10px;
+color: white;
+border: 0px;
+padding:15px 50px;
+margin-top:10px ;
+box-shadow: 0 8px 6px -2px #fb7d7d;
+
 }
